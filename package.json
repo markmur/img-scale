@@ -5,7 +5,7 @@
   "description": "Simple image resizing CLI that uses Sharp under the hood.",
   "main": "index.js",
   "bin": {
-    "img-rsz": "./bin/img.js"
+    "img-rsz": "./bin/img-cli.js"
   },
   "scripts": {
     "start": "babel-node index.js"
