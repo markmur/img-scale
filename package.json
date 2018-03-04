@@ -1,7 +1,7 @@
 {
-  "name": "img",
+  "name": "@markmur/img",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple image resizing CLI that uses Sharp under the hood.",
   "main": "index.js",
   "bin": {
     "img": "./bin/img-cli.js"
@@ -9,8 +9,8 @@
   "scripts": {
     "start": "babel-node index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Mark Murray <mark.murray.ie@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "bytes": "^3.0.0",
     "chalk": "^2.3.2",
