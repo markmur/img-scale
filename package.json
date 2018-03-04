@@ -1,6 +1,7 @@
 {
   "name": "@markmur/img",
   "version": "1.0.0",
+  "private": false,
   "description": "Simple image resizing CLI that uses Sharp under the hood.",
   "main": "index.js",
   "bin": {
