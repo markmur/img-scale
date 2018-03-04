@@ -1,11 +1,11 @@
 {
-  "name": "@markmur/img",
+  "name": "img-rsz",
   "version": "0.1.0",
   "private": false,
   "description": "Simple image resizing CLI that uses Sharp under the hood.",
   "main": "index.js",
   "bin": {
-    "img": "./bin/img-cli.js"
+    "img-rsz": "./bin/img-cli.js"
   },
   "scripts": {
     "start": "babel-node index.js"
