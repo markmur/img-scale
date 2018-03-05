@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-process.title = 're-size';
+process.title = 're-scale';
 
 const img = require('../index.js');

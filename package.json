@@ -1,11 +1,11 @@
 {
-  "name": "re-size",
+  "name": "re-scale",
   "version": "0.1.0",
   "private": false,
   "description": "Simple image resizing CLI that uses Sharp under the hood.",
   "main": "index.js",
   "bin": {
-    "re-size": "./bin/img-cli.js"
+    "re-scale": "./bin/img-cli.js"
   },
   "scripts": {
     "start": "babel-node index.js"

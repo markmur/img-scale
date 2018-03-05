@@ -22,7 +22,7 @@ const extension = image.slice(image.lastIndexOf('.') + 1);
 
 if (!width) {
   throw new Error(
-    '`width` argument is required. Usage re-size --image=image --width 1600'
+    '`width` argument is required. Usage re-scale --image=image --width 1600'
   );
 }
 
