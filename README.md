@@ -1,17 +1,17 @@
-# re-size
+# img-scale
 
 A super simple image resizing CLI tool that uses the amazing [Sharp](https://github.com/lovell/sharp) under the hood.
 
 ### Installation
 
 ```bash
-npm install -g re-size
+npm install -g img-scale
 ```
 
 ### Usage
 
 ```bash
-re-size "my_image.png" --width=1600 --format=jepg --output="resized"
+img-scale "my_image.png" --width=1600 --format=jepg --output="resized"
 ```
 
 #### Arguments
