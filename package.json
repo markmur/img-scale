@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "babel-node index.js",
+    "lint": "xo",
     "lint-staged": "lint-staged"
   },
   "author": "Mark Murray <mark.murray.ie@gmail.com>",

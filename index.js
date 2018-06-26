@@ -1,13 +1,13 @@
 const fs = require('fs');
+const path = require('path');
 const sharp = require('sharp');
 const chalk = require('chalk');
 const bytes = require('bytes');
-const path = require('path');
 const args = require('yargs').argv;
 
 const { _, width, output, format } = args;
 
-if (!_.length) {
+if (_.length <= 0) {
   throw new Error('Input file argument missing');
 }
 
@@ -57,7 +57,7 @@ img.metadata().then(metadata => {
     .toFile(outputFilename, (err, info) => {
       if (err) throw err;
 
-      const { format, width, height, size } = info;
+      const { width, height, size } = info;
 
       console.log(chalk.magentaBright('Successfully resized image:'));
       const outputLog = chalk`
@@ -67,7 +67,7 @@ img.metadata().then(metadata => {
       } x ${metadata.height})}
         Size:         {white.bold ${bytes(size)}} {grey (original: ${bytes(
         originalSize
-      )}, reduction: ${Math.round(100 - size / originalSize * 100)}%)}
+      )}, reduction: ${Math.round(100 - (size / originalSize) * 100)}%)}
       `;
 
       console.log(outputLog);
